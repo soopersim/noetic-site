@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "product": "Product",
+    "how": "How it works",
+    "reviews": "Reviews",
+    "waitlist": "Join waitlist"
+  },
+  "hero": {
+    "eyebrow": "Debate training for sharper thinking",
+    "title": "Practice thinking clearly. Speak with structure.",
+    "subtitle": "Noetic helps learners build argumentation, reflection, and communication skills through guided debate training that feels calm, rigorous, and approachable.",
+    "primary": "Join the waitlist",
+    "secondary": "See how it works",
+    "panelLabel": "Inside the experience",
+    "panelTopicTitle": "Choose a live question",
+    "panelTopicBody": "Start with prompts designed to surface judgment, tradeoffs, and the shape of your reasoning.",
+    "panelPracticeTitle": "Practice with structure",
+    "panelPracticeBody": "Respond in rounds, test counterarguments, and refine how you explain what you actually mean.",
+    "panelReflection": "Feedback that helps you think better, not just talk faster."
+  },
+  "intro": {
+    "label": "What Noetic is",
+    "title": "A calmer way to train reasoning, communication, and intellectual confidence.",
+    "paragraphOne": "Noetic is a debate practice platform for learners who want to think more clearly, organize ideas more effectively, and express themselves with confidence.",
+    "paragraphTwo": "Instead of making debate feel performative or intimidating, Noetic turns it into a guided reflective practice. Users explore arguments, test responses, and improve how they reason through ideas over time.",
+    "trustLabel": "Trust signals",
+    "points": {
+      "reasoning": {
+        "title": "Encourages clear reasoning",
+        "body": "Each session focuses on structure, tradeoffs, and the quality of an argument rather than volume or theatrics."
+      },
+      "approachable": {
+        "title": "Makes practice approachable",
+        "body": "The tone is thoughtful and supportive, so learners can improve without the pressure of a performative debate room."
+      },
+      "growth": {
+        "title": "Supports communication growth",
+        "body": "Noetic helps learners articulate positions, respond under pressure, and reflect on where their thinking needs refinement."
+      },
+      "audience": {
+        "title": "Useful across contexts",
+        "body": "Designed for students, educators, and ambitious learners who want stronger communication and sharper judgment."
+      }
+    },
+    "stats": {
+      "students": {
+        "value": "Students",
+        "label": "Built with learner-first practice in mind, from first-time debaters to academically ambitious speakers."
+      },
+      "sessions": {
+        "value": "Structured",
+        "label": "Every flow is designed around clear prompts, response loops, and feedback that gives shape to improvement."
+      },
+      "design": {
+        "value": "Reflective",
+        "label": "The product is meant to feel calm and credible, not noisy, gamified, or theatrically competitive."
+      }
+    }
+  },
+  "how": {
+    "label": "How it works",
+    "title": "A deliberate three-step practice loop.",
+    "intro": "Noetic keeps the experience simple: pick a prompt, work through your response, and receive feedback you can act on.",
+    "steps": {
+      "one": {
+        "title": "Choose a topic",
+        "body": "Start from a debate prompt or discussion question that matches your level, subject area, or learning goal."
+      },
+      "two": {
+        "title": "Practice your response",
+        "body": "Clarify your position, organize supporting reasons, and test how well your thinking holds under challenge."
+      },
+      "three": {
+        "title": "Receive structured feedback",
+        "body": "Review targeted guidance on reasoning, clarity, and communication so each round leads to noticeable improvement."
+      }
+    }
+  },
+  "associations": {
+    "label": "Background and associations",
+    "body": "Designed by a team shaped by work across education, communication, and learner-facing products."
+  },
+  "appPreview": {
+    "title": "App Demo Video",
+    "description": "Watch a screen recording of the Noetic app in action."
+  },
+  "reviews": {
+    "label": "Early impressions",
+    "title": "What people are saying",
+    "body": "Short testimonials and product impressions can be submitted now and published after approval.",
+    "loading": "Loading approved reviews.",
+    "empty": "No public reviews yet.",
+    "formTitle": "Leave a review",
+    "formBody": "Share a short impression of the concept, prototype, or why this kind of product matters to you.",
+    "name": "Name",
+    "role": "Role or background (optional)",
+    "review": "Write your review",
+    "button": "Submit review",
+    "submitting": "Submitting...",
+    "success": "Thanks. Your review has been submitted for approval.",
+    "ratingOption": "{value} stars",
+    "errors": {
+      "invalid": "Please check your review details and try again.",
+      "config": "Reviews are temporarily unavailable while storage is being configured.",
+      "generic": "Could not submit your review."
+    }
+  },
+  "waitlist": {
+    "label": "Waitlist",
+    "title": "Join the first cohort of thoughtful learners.",
+    "body": "Get early access, launch updates, and product notes as Noetic moves toward release.",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role (optional)",
+    "interest": "What are you hoping Noetic helps you with?",
+    "consent": "I agree to receive updates about Noetic.",
+    "button": "Join waitlist",
+    "submitting": "Submitting...",
+    "success": "You are on the waitlist.",
+    "errors": {
+      "invalid": "Please review your details and try again.",
+      "duplicate": "This email is already on the waitlist.",
+      "config": "Waitlist storage is not configured yet. Add your Supabase keys to enable submissions.",
+      "generic": "Something went wrong while saving your signup."
+    }
+  },
+  "footer": {
+    "tagline": "Debate practice for thoughtful learners who want sharper reasoning and clearer communication.",
+    "contactLabel": "Questions or partnerships"
+  },
+  "notFound": {
+    "title": "This page slipped out of the debate.",
+    "body": "The page you are looking for is not here, but the main Noetic landing page is still available.",
+    "action": "Return home"
+  }
+}
