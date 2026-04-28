@@ -3,9 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://noetic.app"),
-  title: "Noetic",
+  title: "Noetic — AI Debate Coach & Speaking Practice App",
   description:
-    "Noetic is a thoughtful debate practice platform for learners who want sharper reasoning, calmer reflection, and clearer communication.",
+    "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
   icons: {
     icon: [
       {
@@ -17,17 +17,28 @@ export const metadata: Metadata = {
     shortcut: "/logos/noetic-logo.png",
     apple: "/logos/noetic-logo.png",
   },
+  keywords: [
+    "AI debate coach",
+    "debate training app",
+    "speaking practice app",
+    "public speaking AI",
+    "critical thinking app",
+    "student debate training",
+    "argument practice",
+    "AI feedback for students",
+  ],
   openGraph: {
-    title: "Noetic",
+    title: "Noetic — AI Debate Coach & Speaking Practice App",
     description:
-      "Practice thinking clearly. Speak with structure. Join the Noetic waitlist.",
+      "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
     type: "website",
+    url: "https://noetic.app",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noetic",
+    title: "Noetic — AI Debate Coach & Speaking Practice App",
     description:
-      "Practice thinking clearly. Speak with structure. Join the Noetic waitlist.",
+      "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
   },
 };
 
@@ -38,6 +49,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      </head>
       <body>{children}</body>
     </html>
   );

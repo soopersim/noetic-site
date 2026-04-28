@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f2eb;
-  --surface: rgba(255, 255, 255, 0.76);
-  --surface-strong: rgba(255, 255, 255, 0.92);
-  --foreground: #171717;
-  --muted: #5d5d58;
-  --line: rgba(30, 27, 24, 0.1);
-  --line-strong: rgba(30, 27, 24, 0.18);
-  --accent: #1f3a5f;
-  --accent-soft: rgba(31, 58, 95, 0.08);
-  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --background: #181414;
+  --surface: rgba(33, 28, 28, 0.6);
+  --surface-strong: rgba(18, 15, 15, 0.95);
+  --foreground: #F7F4EF;
+  --muted: #8F8780;
+  --line: rgba(247, 244, 239, 0.12);
+  --line-strong: rgba(247, 244, 239, 0.24);
+  --accent: #F7F4EF;
+  --accent-soft: rgba(247, 244, 239, 0.08);
+  --glow: rgba(232, 224, 212, 0.15);
+  --font-sans: "Manrope", "Segoe UI", "Trebuchet MS", sans-serif;
   --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
 }
 
@@ -24,6 +25,7 @@
   --color-line-strong: var(--line-strong);
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
+  --color-highlight: var(--highlight);
   --font-sans: var(--font-sans);
   --font-serif: var(--font-serif);
 }
@@ -39,15 +41,17 @@ html {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(31, 58, 95, 0.08), transparent 32%),
-    linear-gradient(180deg, #f7f3ee 0%, #f4efe8 100%);
+    radial-gradient(circle at 20% 50%, rgba(232, 224, 212, 0.16), transparent 34%),
+    radial-gradient(circle at 80% 20%, rgba(175, 175, 170, 0.12), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(232, 224, 212, 0.10), transparent 42%),
+    linear-gradient(180deg, #181414 0%, #120f0f 100%);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
   text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background: rgba(31, 58, 95, 0.16);
+  background: rgba(232, 224, 212, 0.18);
 }
 
 a,

@@ -1,28 +1,28 @@
 import { useTranslations } from "next-intl";
 
-const steps = ["one", "two", "three"] as const;
+const steps = ["one", "two", "three", "four", "five"] as const;
 
 export default function HowItWorks() {
   const t = useTranslations("how");
 
   return (
     <section id="how-it-works" className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
-      <div className="rounded-[2.25rem] border border-line bg-surface-strong p-8 shadow-[0_30px_90px_rgba(28,28,26,0.08)] sm:p-10">
+      <div className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-950/5 p-8 shadow-[0_40px_90px_rgba(15,23,42,0.1)] backdrop-blur sm:p-10">
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-muted">
           {t("label")}
         </p>
-        <div className="mt-4 flex max-w-3xl flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <h2 className="text-4xl font-semibold tracking-[-0.05em] text-foreground sm:text-5xl">
+        <div className="mt-4 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <h2 className="max-w-3xl text-4xl font-semibold tracking-[-0.05em] text-foreground sm:text-5xl">
             {t("title")}
           </h2>
           <p className="max-w-xl text-base leading-7 text-muted">{t("intro")}</p>
         </div>
 
-        <div className="mt-10 grid gap-4 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {steps.map((step, index) => (
             <article
               key={step}
-              className="rounded-[1.75rem] border border-line bg-white/85 p-6"
+              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted">
                 0{index + 1}
@@ -39,4 +39,4 @@ export default function HowItWorks() {
       </div>
     </section>
   );
-}
+} 

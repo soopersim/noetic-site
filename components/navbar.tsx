@@ -1,24 +1,38 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
+  const currentLocale = pathname?.split("/")[1] || "en";
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-[#f7f3ee]/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4 sm:px-8 lg:px-12">
-        <a href="#top" className="text-lg font-semibold tracking-[-0.05em] text-foreground">
-          noetic
+    <header className="sticky top-0 z-50 border-b border-[rgba(247,244,239,0.08)] bg-[rgba(24,20,20,0.72)] backdrop-blur-lg">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 sm:px-8 lg:px-12">
+        <a href={`/${currentLocale}`} className="flex items-center gap-2">
+          <Image 
+            src="/logos/Noetic-logo.png"
+            alt="Noetic"
+            width={32}
+            height={32}
+            className="h-8 w-8"
+            priority
+          />
+          <span className="text-sm font-semibold tracking-[-0.02em] text-[#F7F4EF]">noetic</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <a href="#product" className="text-sm text-muted hover:text-foreground">
+          <a href={`/${currentLocale}#demo`} className="text-sm text-[#C9C2B8] hover:text-[#F7F4EF] transition">
             {t("product")}
           </a>
-          <a href="#how-it-works" className="text-sm text-muted hover:text-foreground">
+          <a href={`/${currentLocale}#rubric`} className="text-sm text-[#C9C2B8] hover:text-[#F7F4EF] transition">
             {t("how")}
           </a>
-          <a href="#reviews" className="text-sm text-muted hover:text-foreground">
+          <a href={`/${currentLocale}#testimonials`} className="text-sm text-[#C9C2B8] hover:text-[#F7F4EF] transition">
             {t("reviews")}
           </a>
         </nav>
@@ -26,8 +40,8 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <a
-            href="#waitlist"
-            className="hidden rounded-full bg-foreground px-4 py-2.5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(23,23,23,0.16)] sm:inline-flex"
+            href={`/${currentLocale}#waitlist`}
+            className="hidden rounded-full border border-[rgba(247,244,239,0.18)] bg-[rgba(247,244,239,0.08)] hover:bg-[rgba(247,244,239,0.12)] px-4 py-2.5 text-sm font-semibold text-[#F7F4EF] transition sm:inline-flex"
           >
             {t("waitlist")}
           </a>
