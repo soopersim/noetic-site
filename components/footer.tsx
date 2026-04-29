@@ -42,8 +42,8 @@ export default function Footer() {
         <div className="mt-12 border-t border-[rgba(247,244,239,0.12)] pt-8">
           <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center text-sm text-[#C9C2B8]">
             <p>© {new Date().getFullYear()} Noetic. All rights reserved.</p>
-            <a href="mailto:hello@noetic.app" className="hover:text-[#F7F4EF] transition">
-              hello@noetic.app
+            <a href="mailto:asknoetic@gmail.com" className="hover:text-[#F7F4EF] transition">
+              asknoetic@gmail.com
             </a>
           </div>
         </div>
