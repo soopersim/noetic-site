@@ -7,15 +7,8 @@ export const metadata: Metadata = {
   description:
     "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
   icons: {
-    icon: [
-      {
-        url: "/logos/noetic-logo.png",
-        type: "image/png",
-        sizes: "any",
-      },
-    ],
-    shortcut: "/logos/noetic-logo.png",
-    apple: "/logos/noetic-logo.png",
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   keywords: [
     "AI debate coach",
@@ -33,12 +26,21 @@ export const metadata: Metadata = {
       "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
     type: "website",
     url: "https://noetic.app",
+    images: [
+      {
+        url: "/logos/noetic-logo.png",
+        width: 512,
+        height: 512,
+        alt: "Noetic",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Noetic — AI Debate Coach & Speaking Practice App",
     description:
       "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
+    images: ["/logos/noetic-logo.png"],
   },
 };
 

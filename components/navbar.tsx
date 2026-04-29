@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 sm:px-8 lg:px-12">
         <a href={`/${currentLocale}`} className="flex items-center gap-2">
           <Image 
-            src="/logos/Noetic-logo.png"
+            src="/logos/noetic-logo.png"
             alt="Noetic"
             width={32}
             height={32}
