@@ -1,51 +1,99 @@
-"use client";
-
-import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { X, Globe, Mail } from "lucide-react";
 
 export default function Footer() {
-  const t = useTranslations("footer");
-  const pathname = usePathname();
-
-  // Get current locale from pathname
-  const currentLocale = pathname?.split("/")[1] || "en";
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[rgba(247,244,239,0.12)] px-6 py-12 sm:px-8 lg:px-12">
+    <footer className="border-t border-[var(--line)] px-6 pt-14 pb-8 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-6xl">
-        <div className="grid gap-12 md:grid-cols-2">
+        {/* Three-column grid */}
+        <div className="grid gap-10 sm:grid-cols-3">
+          {/* Column 1: Logo + mission */}
           <div>
-            <p className="text-lg font-semibold text-[#F7F4EF]">noetic</p>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-[#C9C2B8]">{t("tagline")}</p>
+            <p className="text-sm font-bold tracking-[-0.02em] text-foreground">noetic</p>
+            <p className="mt-2 max-w-[200px] text-xs leading-relaxed text-muted">
+              Building the next generation of rigorous, respectful thinkers.
+            </p>
           </div>
-          
-          <div className="grid gap-8 md:grid-cols-2 text-sm">
+
+          {/* Column 2: Product + Company */}
+          <div className="grid grid-cols-2 gap-6 sm:col-span-1 sm:grid-cols-2">
             <div>
-              <p className="text-[#C9C2B8] font-semibold mb-4">Product</p>
-              <div className="space-y-2">
-                <a href={`/${currentLocale}#demo`} className="block text-[#C9C2B8] hover:text-[#F7F4EF] transition">Demo</a>
-                <a href={`/${currentLocale}#rubric`} className="block text-[#C9C2B8] hover:text-[#F7F4EF] transition">Feedback</a>
-              </div>
+              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">Product</p>
+              <ul className="space-y-2 text-xs text-muted">
+                <li><span className="opacity-50">App — coming soon</span></li>
+              </ul>
             </div>
-            
             <div>
-              <p className="text-[#C9C2B8] font-semibold mb-4">Legal</p>
-              <div className="space-y-2">
-                <Link href={`/${currentLocale}/privacy`} className="block text-[#C9C2B8] hover:text-[#F7F4EF] transition">Privacy Policy</Link>
-                <Link href={`/${currentLocale}/terms`} className="block text-[#C9C2B8] hover:text-[#F7F4EF] transition">Terms & Conditions</Link>
-              </div>
+              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">Company</p>
+              <ul className="space-y-2 text-xs">
+                <li>
+                  <Link href="/en/terms" className="text-muted hover:text-foreground transition-colors">
+                    Terms
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/en/privacy" className="text-muted hover:text-foreground transition-colors">
+                    Privacy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Column 3: Connect */}
+          <div>
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">Connect</p>
+            <div className="flex items-center gap-4">
+              <a
+                href="mailto:asknoetic@gmail.com"
+                aria-label="Email"
+                className="text-muted hover:text-foreground transition-colors"
+              >
+                <Mail size={16} />
+              </a>
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (formerly Twitter)"
+                className="text-muted hover:text-foreground transition-colors"
+              >
+                <X size={16} />
+              </a>
+              <a
+                href="https://noetic.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Website"
+                className="text-muted hover:text-foreground transition-colors"
+              >
+                <Globe size={16} />
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-[rgba(247,244,239,0.12)] pt-8">
-          <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center text-sm text-[#C9C2B8]">
-            <p>© {new Date().getFullYear()} Noetic. All rights reserved.</p>
-            <a href="mailto:asknoetic@gmail.com" className="hover:text-[#F7F4EF] transition">
-              asknoetic@gmail.com
-            </a>
-          </div>
+        {/* Stretched NOETIC wordmark */}
+        <div className="mt-16 overflow-hidden" aria-hidden="true">
+          <p
+            className="select-none text-[clamp(4rem,14vw,10rem)] font-bold leading-none tracking-[-0.06em] text-foreground opacity-[0.04]"
+            style={{ letterSpacing: "-0.06em" }}
+          >
+            NOETIC
+          </p>
+        </div>
+
+        {/* Bottom row */}
+        <div className="mt-4 flex flex-col gap-2 border-t border-[var(--line)] pt-6 sm:flex-row sm:justify-between">
+          <p className="text-xs text-muted">© {year} Noetic. All rights reserved.</p>
+          <a
+            href="mailto:asknoetic@gmail.com"
+            className="text-xs text-muted hover:text-foreground transition-colors"
+          >
+            asknoetic@gmail.com
+          </a>
         </div>
       </div>
     </footer>

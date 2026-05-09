@@ -3,27 +3,27 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://noetic.app"),
-  title: "Noetic — AI Debate Coach & Speaking Practice App",
+  title: "Noetic — Think Clearly. Argue Better.",
   description:
-    "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
+    "Noetic is an AI-moderated platform for critical thinking and debate. Share a belief, watch it decompose, debate it with peers, and grow your reasoning skills over time.",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
   keywords: [
-    "AI debate coach",
-    "debate training app",
-    "speaking practice app",
-    "public speaking AI",
-    "critical thinking app",
-    "student debate training",
-    "argument practice",
-    "AI feedback for students",
+    "critical thinking",
+    "debate platform",
+    "AI moderation",
+    "reasoning skills",
+    "student debate",
+    "argumentation",
+    "peer debate",
+    "intellectual growth",
   ],
   openGraph: {
-    title: "Noetic — AI Debate Coach & Speaking Practice App",
+    title: "Noetic — Think Clearly. Argue Better.",
     description:
-      "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
+      "An AI-moderated platform for critical thinking and debate, built for students and young thinkers.",
     type: "website",
     url: "https://noetic.app",
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noetic — AI Debate Coach & Speaking Practice App",
+    title: "Noetic — Think Clearly. Argue Better.",
     description:
-      "Noetic helps students speak aloud, debate with AI, and get feedback on clarity, reasoning, structure, confidence, and delivery.",
+      "An AI-moderated platform for critical thinking and debate, built for students and young thinkers.",
     images: ["/logos/noetic-logo.png"],
   },
 };
@@ -54,7 +54,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>{children}</body>
     </html>

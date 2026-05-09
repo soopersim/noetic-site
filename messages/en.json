@@ -1,46 +1,90 @@
 {
   "nav": {
-    "demo": "Demo",
-    "feedback": "Feedback",
+    "mission": "Mission",
+    "howItWorks": "How It Works",
+    "faq": "FAQ",
+    "waitlist": "Join Waitlist",
+    "product": "How It Works",
+    "how": "How It Works",
     "reviews": "Reviews",
-    "waitlist": "Join waitlist",
-    "product": "Demo",
-    "how": "Feedback"
+    "demo": "Demo",
+    "feedback": "Feedback"
   },
   "hero": {
-    "headline": "Train your voice.",
-    "subheadline": "Think deeper. Speak sharper. Defend your ideas."
+    "badge": "For the next generation of thinkers",
+    "headline": "Think clearly. Argue better.",
+    "subheadline": "Noetic is an AI-moderated space where students share beliefs, debate peers, and build reasoning skills that last a lifetime."
   },
-  "appPreview": {
-    "label": "Product demo",
-    "title": "Your practice space",
-    "description": "Pick a topic you care about. Speak your mind. Get smarter."
+  "illustration": {
+    "caption": "A place to be in dialogue, not in performance."
   },
-  "socialDebate": {
-    "label": "Social learning",
-    "title": "Deep chats, guided.",
-    "description": "Bring friends. Debate ideas. Leave sharper.",
-    "comingSoon": "Coming soon"
+  "universities": {
+    "clarifier": "Aspirational — we're building Noetic with these students in mind"
+  },
+  "howItWorks": {
+    "label": "How Noetic works",
+    "title": "From thought to understanding.",
+    "steps": {
+      "one": {
+        "title": "Share a thought.",
+        "body": "Type out an opinion, belief, or argument — anything you want to examine more closely."
+      },
+      "two": {
+        "title": "Watch it decompose.",
+        "body": "Noetic's AI breaks your argument into claims, assumptions, and evidence, exposing what's solid and what isn't."
+      },
+      "three": {
+        "title": "Debate it live.",
+        "body": "Get matched with a peer for an AI-moderated discussion that challenges both of you to think harder."
+      },
+      "four": {
+        "title": "Grow over time.",
+        "body": "Track your reasoning, articulation, and listening skills as you practise — and watch them improve."
+      }
+    }
+  },
+  "whyNoetic": {
+    "label": "Why Noetic?",
+    "title": "Built for rigour.",
+    "cards": {
+      "feedback": {
+        "title": "Personalised AI Feedback.",
+        "body": "Feedback on your reasoning, clarity, and how you handle disagreement — tailored to how you actually think."
+      },
+      "brainrot": {
+        "title": "An Antidote to Brain Rot.",
+        "body": "Instead of doom-scrolling, train how you think. Replace passive consumption with active reflection."
+      },
+      "belief": {
+        "title": "Belief vs. Absorption.",
+        "body": "Sort what you actually believe from what you've passively absorbed online. Find your own positions."
+      },
+      "debate": {
+        "title": "Live Guided Debates.",
+        "body": "Practice articulating and defending ideas in real conversations with peers, moderated by AI."
+      }
+    }
   },
   "reviews": {
     "label": "What people are saying",
+    "title": "In their words.",
     "empty": "Be the first to share your thoughts about Noetic."
   },
   "waitlist": {
-    "label": "Your words are power.",
-    "body": "Start training them.",
+    "label": "Think clearly. Argue better. Join Noetic.",
+    "body": "No spam. Just early access and updates.",
     "name": "Name",
-    "email": "Email",
+    "email": "your@email.com",
     "interest": "What are you hoping Noetic helps you with?",
     "consent": "I agree to receive early access updates from Noetic.",
-    "button": "Join the waitlist",
-    "submitting": "Submitting...",
-    "success": "You are on the waitlist.",
+    "button": "Join Waitlist",
+    "submitting": "Joining…",
+    "success": "You're on the list. We'll be in touch.",
     "errors": {
       "invalid": "Please review your details and try again.",
       "duplicate": "This email is already on the waitlist.",
       "config": "Waitlist storage is not configured yet.",
-      "generic": "Something went wrong while saving your signup."
+      "generic": "Something went wrong. Please try again."
     }
   },
   "footer": {
@@ -51,8 +95,8 @@
     "privacy": "Privacy Policy",
     "terms": "Terms & Conditions",
     "copyright": "© {year} Noetic. All rights reserved.",
-    "contact": "contact@noetic.ai",
-    "tagline": "Think deeper. Speak sharper."
+    "contact": "asknoetic@gmail.com",
+    "tagline": "Building the next generation of rigorous, respectful thinkers."
   },
   "notFound": {
     "title": "This page slipped out of the debate.",

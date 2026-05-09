@@ -13,9 +13,9 @@ export async function GET() {
   const { data, error } = await supabase
     .from("reviews")
     .select("id, name, role, rating, review, language, created_at")
-    .eq("approved", true)
+    .eq("featured", true)
     .order("created_at", { ascending: false })
-    .limit(12);
+    .limit(9);
 
   if (error) {
     return NextResponse.json({ error: "REVIEWS_LOAD_FAILED" }, { status: 500 });

@@ -1,0 +1,108 @@
+<svg viewBox="0 0 200 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <pattern id="el-hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#1A1714" stroke-width="0.35" opacity="0.18"/>
+    </pattern>
+    <pattern id="el-cross" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="5" stroke="#1A1714" stroke-width="0.35" opacity="0.12"/>
+      <line x1="0" y1="0" x2="5" y2="0" stroke="#1A1714" stroke-width="0.35" opacity="0.12"/>
+    </pattern>
+    <clipPath id="el-oval">
+      <ellipse cx="100" cy="195" rx="82" ry="108"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer border double rule -->
+  <rect x="8" y="8" width="184" height="464" stroke="#1A1714" stroke-width="0.8" fill="none"/>
+  <rect x="13" y="13" width="174" height="454" stroke="#1A1714" stroke-width="0.3" fill="none"/>
+
+  <!-- Background hatching -->
+  <rect x="14" y="14" width="172" height="452" fill="url(#el-hatch)"/>
+
+  <!-- Oval frame -->
+  <ellipse cx="100" cy="195" rx="82" ry="108" fill="#F5F1EA" stroke="#1A1714" stroke-width="1"/>
+  <ellipse cx="100" cy="195" rx="76" ry="102" fill="none" stroke="#1A1714" stroke-width="0.4"/>
+
+  <!-- Figure inside oval: profile head facing left -->
+  <!-- Neck and shoulders -->
+  <path d="M 68,260 Q 78,265 100,268 Q 122,265 132,260 L 140,290 Q 110,300 100,302 Q 90,300 60,290 Z" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <!-- Drapery lines -->
+  <path d="M 68,260 Q 65,275 62,292" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 75,263 Q 72,278 70,294" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <path d="M 132,260 Q 135,275 138,291" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 125,263 Q 128,278 130,293" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+
+  <!-- Head (profile left-facing) -->
+  <ellipse cx="102" cy="176" rx="34" ry="40" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.8"/>
+
+  <!-- Hair - hatched top -->
+  <path d="M 72,162 Q 78,135 102,132 Q 126,135 135,155" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <line x1="78" y1="148" x2="84" y2="140" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="86" y1="142" x2="92" y2="134" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="95" y1="138" x2="100" y2="130" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="104" y1="136" x2="109" y2="130" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="112" y1="138" x2="118" y2="133" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="120" y1="143" x2="127" y2="140" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="126" y1="150" x2="133" y2="148" stroke="#1A1714" stroke-width="0.4"/>
+
+  <!-- Face profile: forehead, nose, lips, chin (facing left) -->
+  <path d="M 72,162 Q 70,168 71,177 Q 72,183 76,187 Q 73,192 74,198 Q 76,205 82,208 Q 80,214 82,218" stroke="#1A1714" stroke-width="0.8" fill="none"/>
+  <!-- Brow ridge -->
+  <path d="M 72,169 Q 75,166 80,167" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <!-- Eye -->
+  <ellipse cx="81" cy="171" rx="5" ry="3.5" fill="none" stroke="#1A1714" stroke-width="0.6"/>
+  <ellipse cx="81" cy="171" rx="2" ry="2" fill="#1A1714" opacity="0.7"/>
+  <!-- Nose -->
+  <path d="M 76,187 Q 72,194 74,198" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <!-- Lips -->
+  <path d="M 76,205 Q 80,202 84,205" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <path d="M 76,205 Q 80,208 84,205" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <!-- Ear -->
+  <path d="M 131,170 Q 136,175 136,182 Q 135,188 130,190" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <path d="M 132,175 Q 133,182 132,186" stroke="#1A1714" stroke-width="0.35" fill="none"/>
+
+  <!-- Neck -->
+  <path d="M 82,218 L 85,240" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <path d="M 120,218 L 117,240" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <line x1="86" y1="232" x2="116" y2="232" stroke="#1A1714" stroke-width="0.4"/>
+
+  <!-- Decorative elements below oval -->
+  <!-- Small flourish -->
+  <path d="M 85,310 Q 100,318 115,310" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <path d="M 90,315 Q 100,322 110,315" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+
+  <!-- Roman numerals / caption line -->
+  <line x1="40" y1="335" x2="160" y2="335" stroke="#1A1714" stroke-width="0.5"/>
+  <line x1="40" y1="338" x2="160" y2="338" stroke="#1A1714" stroke-width="0.2"/>
+
+  <!-- Small decorative text-like marks (suggest engraving caption) -->
+  <rect x="70" y="342" width="60" height="1.5" fill="#1A1714" opacity="0.25" rx="0.5"/>
+  <rect x="80" y="347" width="40" height="1" fill="#1A1714" opacity="0.2" rx="0.5"/>
+
+  <!-- Corner flourishes -->
+  <path d="M 20,20 Q 26,20 26,26" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 180,20 Q 174,20 174,26" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 20,460 Q 26,460 26,454" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 180,460 Q 174,460 174,454" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+
+  <!-- Bottom laurel branch suggestion -->
+  <path d="M 55,390 Q 65,380 75,388 Q 85,378 95,385 Q 105,375 115,383 Q 125,373 135,381 Q 145,372 155,380" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <ellipse cx="68" cy="384" rx="6" ry="4" fill="none" stroke="#1A1714" stroke-width="0.4" transform="rotate(-30 68 384)"/>
+  <ellipse cx="88" cy="381" rx="6" ry="4" fill="none" stroke="#1A1714" stroke-width="0.4" transform="rotate(-20 88 381)"/>
+  <ellipse cx="108" cy="378" rx="6" ry="4" fill="none" stroke="#1A1714" stroke-width="0.4" transform="rotate(-10 108 378)"/>
+  <ellipse cx="128" cy="376" rx="6" ry="4" fill="none" stroke="#1A1714" stroke-width="0.4" transform="rotate(10 128 376)"/>
+
+  <!-- Top medallion ornament -->
+  <path d="M 85,40 Q 100,30 115,40" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <circle cx="100" cy="52" r="8" fill="none" stroke="#1A1714" stroke-width="0.6"/>
+  <circle cx="100" cy="52" r="4" fill="none" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="100" y1="44" x2="100" y2="60" stroke="#1A1714" stroke-width="0.3"/>
+  <line x1="92" y1="52" x2="108" y2="52" stroke="#1A1714" stroke-width="0.3"/>
+  <!-- Cross hatching in top ornament circle -->
+  <path d="M 94,46 L 106,58" stroke="#1A1714" stroke-width="0.25" opacity="0.4"/>
+  <path d="M 106,46 L 94,58" stroke="#1A1714" stroke-width="0.25" opacity="0.4"/>
+
+  <!-- Side decorative lines -->
+  <line x1="22" y1="80" x2="22" y2="420" stroke="#1A1714" stroke-width="0.3" opacity="0.4"/>
+  <line x1="178" y1="80" x2="178" y2="420" stroke="#1A1714" stroke-width="0.3" opacity="0.4"/>
+</svg>

@@ -1,20 +1,26 @@
-import Footer from "@/components/footer";
-import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import IllustrationBlock from "@/components/illustration-block";
+import Universities from "@/components/universities";
+import HowItWorks from "@/components/how-it-works";
+import WhyNoetic from "@/components/why-noetic";
 import ReviewsSection from "@/components/reviews-section";
-import WaitlistForm from "@/components/waitlist-form";
-import AppPreview from "@/components/app-preview";
-import SocialDebateRooms from "@/components/social-debate-rooms";
+import FAQ from "@/components/faq";
+import FinalCTA from "@/components/final-cta";
+import Footer from "@/components/footer";
 
 export default function HomePage() {
   return (
     <main id="top" className="min-h-screen text-foreground">
       <Navbar />
       <Hero />
-      <AppPreview />
-      <SocialDebateRooms />
+      <IllustrationBlock />
+      <Universities />
+      <HowItWorks />
+      <WhyNoetic />
       <ReviewsSection />
-      <WaitlistForm />
+      <FAQ />
+      <FinalCTA />
       <Footer />
     </main>
   );

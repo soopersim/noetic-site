@@ -1,0 +1,179 @@
+<svg viewBox="0 0 900 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <pattern id="ew-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#1A1714" stroke-width="0.3" opacity="0.14"/>
+    </pattern>
+    <pattern id="ew-sky" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#1A1714" stroke-width="0.25" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer border -->
+  <rect x="6" y="6" width="888" height="348" stroke="#1A1714" stroke-width="0.8" fill="none"/>
+  <rect x="11" y="11" width="878" height="338" stroke="#1A1714" stroke-width="0.3" fill="none"/>
+
+  <!-- Sky / background with horizontal hatching -->
+  <rect x="12" y="12" width="876" height="200" fill="url(#ew-sky)"/>
+  <!-- Ground with diagonal hatching -->
+  <rect x="12" y="212" width="876" height="136" fill="url(#ew-hatch)"/>
+
+  <!-- Ground line -->
+  <line x1="12" y1="212" x2="888" y2="212" stroke="#1A1714" stroke-width="0.7"/>
+  <!-- Second ground line -->
+  <line x1="12" y1="218" x2="888" y2="218" stroke="#1A1714" stroke-width="0.3"/>
+
+  <!-- Architecture: central arch -->
+  <path d="M 360,212 L 360,100 Q 360,60 450,60 Q 540,60 540,100 L 540,212" stroke="#1A1714" stroke-width="1.2" fill="#F5F1EA"/>
+  <!-- Arch inner -->
+  <path d="M 375,212 L 375,108 Q 375,78 450,78 Q 525,78 525,108 L 525,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <!-- Arch keystone -->
+  <path d="M 437,62 L 445,55 L 455,62" stroke="#1A1714" stroke-width="0.6" fill="#F5F1EA"/>
+  <!-- Arch voussoir lines -->
+  <line x1="363" y1="128" x2="376" y2="124" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="363" y1="142" x2="376" y2="136" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="366" y1="106" x2="378" y2="104" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="537" y1="128" x2="524" y2="124" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="537" y1="142" x2="524" y2="136" stroke="#1A1714" stroke-width="0.4"/>
+  <line x1="534" y1="106" x2="522" y2="104" stroke="#1A1714" stroke-width="0.4"/>
+
+  <!-- Left column -->
+  <rect x="290" y="60" width="28" height="152" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.8"/>
+  <rect x="293" y="63" width="22" height="146" fill="none" stroke="#1A1714" stroke-width="0.3"/>
+  <!-- Column base -->
+  <rect x="283" y="208" width="42" height="10" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.6"/>
+  <!-- Column capital -->
+  <rect x="283" y="52" width="42" height="10" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.6"/>
+  <path d="M 283,58 Q 304,48 325,58" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <!-- Column flutes -->
+  <line x1="297" y1="63" x2="297" y2="208" stroke="#1A1714" stroke-width="0.3" opacity="0.5"/>
+  <line x1="304" y1="63" x2="304" y2="208" stroke="#1A1714" stroke-width="0.3" opacity="0.5"/>
+  <line x1="311" y1="63" x2="311" y2="208" stroke="#1A1714" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- Right column -->
+  <rect x="582" y="60" width="28" height="152" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.8"/>
+  <rect x="585" y="63" width="22" height="146" fill="none" stroke="#1A1714" stroke-width="0.3"/>
+  <rect x="575" y="208" width="42" height="10" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.6"/>
+  <rect x="575" y="52" width="42" height="10" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.6"/>
+  <path d="M 575,58 Q 596,48 617,58" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <line x1="589" y1="63" x2="589" y2="208" stroke="#1A1714" stroke-width="0.3" opacity="0.5"/>
+  <line x1="596" y1="63" x2="596" y2="208" stroke="#1A1714" stroke-width="0.3" opacity="0.5"/>
+  <line x1="603" y1="63" x2="603" y2="208" stroke="#1A1714" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- Figure 1: left, standing, facing right/center -->
+  <!-- Body -->
+  <path d="M 130,212 L 132,160 Q 145,155 155,160 L 158,212 Z" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <!-- Drapery -->
+  <path d="M 132,165 Q 128,185 125,212" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 136,162 Q 133,182 131,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <path d="M 154,165 Q 157,185 160,212" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <!-- Head -->
+  <ellipse cx="144" cy="147" rx="14" ry="16" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <!-- Hair lines -->
+  <path d="M 130,144 Q 134,132 144,130 Q 154,132 158,144" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <line x1="135" y1="138" x2="137" y2="132" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="141" y1="133" x2="143" y2="128" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="147" y1="133" x2="149" y2="128" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="153" y1="137" x2="156" y2="132" stroke="#1A1714" stroke-width="0.35"/>
+  <!-- Eye -->
+  <ellipse cx="150" cy="149" rx="3" ry="2" fill="none" stroke="#1A1714" stroke-width="0.5"/>
+  <!-- Extended arm toward center -->
+  <path d="M 155,165 Q 168,162 178,158" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+
+  <!-- Figure 2: center-left, seated, facing right -->
+  <path d="M 218,212 L 220,175 Q 232,168 244,173 L 248,212 Z" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 222,178 Q 218,195 216,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <path d="M 244,175 Q 248,195 250,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <ellipse cx="232" cy="162" rx="13" ry="15" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 220,159 Q 223,148 232,146 Q 241,148 244,159" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <line x1="224" y1="153" x2="226" y2="148" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="229" y1="149" x2="231" y2="144" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="235" y1="149" x2="237" y2="144" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="240" y1="153" x2="242" y2="148" stroke="#1A1714" stroke-width="0.35"/>
+  <ellipse cx="238" cy="164" rx="2.5" ry="1.8" fill="none" stroke="#1A1714" stroke-width="0.5"/>
+  <!-- Arm with scroll -->
+  <path d="M 244,178 Q 260,174 272,176" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <!-- Scroll -->
+  <path d="M 270,165 Q 268,172 268,182 Q 268,188 272,190 L 286,190 Q 290,188 290,182 Q 290,172 288,165 Q 287,160 279,159 Q 271,160 270,165 Z" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.6"/>
+  <line x1="273" y1="170" x2="284" y2="170" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="272" y1="175" x2="285" y2="175" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="272" y1="180" x2="285" y2="180" stroke="#1A1714" stroke-width="0.35"/>
+  <path d="M 270,165 Q 274,157 279,159 Q 284,157 288,165" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+
+  <!-- Figure 3: center, standing, facing right (speaker/orator) -->
+  <path d="M 440,212 L 442,148 Q 456,140 468,146 L 472,212 Z" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 442,152 Q 438,182 436,212" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 448,150 Q 445,180 442,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <path d="M 468,150 Q 472,182 474,212" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <!-- Raised arm -->
+  <path d="M 468,158 Q 482,150 492,142" stroke="#1A1714" stroke-width="0.7" fill="none"/>
+  <!-- Hand open -->
+  <path d="M 488,138 L 492,142 L 488,146" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <line x1="492" y1="142" x2="500" y2="138" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="492" y1="142" x2="499" y2="143" stroke="#1A1714" stroke-width="0.35"/>
+  <!-- Head -->
+  <ellipse cx="455" cy="134" rx="15" ry="17" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 440,131 Q 444,118 455,116 Q 466,118 470,131" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <line x1="444" y1="124" x2="446" y2="118" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="451" y1="119" x2="453" y2="114" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="458" y1="119" x2="460" y2="114" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="465" y1="124" x2="467" y2="118" stroke="#1A1714" stroke-width="0.35"/>
+  <ellipse cx="463" cy="136" rx="2.5" ry="1.8" fill="none" stroke="#1A1714" stroke-width="0.5"/>
+
+  <!-- Figure 4: right of center, seated, facing left (listening) -->
+  <path d="M 620,212 L 622,172 Q 635,165 648,170 L 650,212 Z" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 622,175 Q 618,194 616,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <path d="M 647,172 Q 651,192 652,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <!-- Chin resting on hand -->
+  <path d="M 622,182 Q 612,186 606,190" stroke="#1A1714" stroke-width="0.6" fill="none"/>
+  <ellipse cx="634" cy="159" rx="13" ry="15" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 621,156 Q 624,145 634,143 Q 644,145 647,156" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <line x1="625" y1="150" x2="627" y2="145" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="631" y1="146" x2="633" y2="141" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="637" y1="146" x2="639" y2="141" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="643" y1="150" x2="645" y2="145" stroke="#1A1714" stroke-width="0.35"/>
+  <ellipse cx="626" cy="161" rx="2.5" ry="1.8" fill="none" stroke="#1A1714" stroke-width="0.5"/>
+
+  <!-- Figure 5: far right, standing with staff/torch -->
+  <path d="M 748,212 L 750,155 Q 763,148 774,153 L 777,212 Z" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 750,158 Q 746,185 744,212" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 757,156 Q 755,183 753,212" stroke="#1A1714" stroke-width="0.4" fill="none"/>
+  <path d="M 773,157 Q 777,185 778,212" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <!-- Staff -->
+  <line x1="776" y1="158" x2="800" y2="80" stroke="#1A1714" stroke-width="0.8"/>
+  <!-- Torch flame -->
+  <path d="M 796,76 Q 800,68 804,74 Q 808,66 804,60 Q 800,70 796,66 Q 792,60 794,68 Q 796,74 796,76 Z" fill="#1A1714" opacity="0.25" stroke="#1A1714" stroke-width="0.5"/>
+  <ellipse cx="762" cy="141" rx="14" ry="16" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.7"/>
+  <path d="M 748,138 Q 752,127 762,125 Q 772,127 776,138" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <line x1="752" y1="132" x2="754" y2="127" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="758" y1="128" x2="760" y2="123" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="765" y1="128" x2="767" y2="123" stroke="#1A1714" stroke-width="0.35"/>
+  <line x1="771" y1="132" x2="773" y2="127" stroke="#1A1714" stroke-width="0.35"/>
+  <ellipse cx="770" cy="142" rx="2.5" ry="1.8" fill="none" stroke="#1A1714" stroke-width="0.5"/>
+
+  <!-- Step/platform under central figures -->
+  <rect x="380" y="205" width="140" height="7" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.5"/>
+  <rect x="390" y="202" width="120" height="4" fill="#F5F1EA" stroke="#1A1714" stroke-width="0.4"/>
+  <!-- Steps lines -->
+  <line x1="381" y1="207" x2="519" y2="207" stroke="#1A1714" stroke-width="0.3"/>
+
+  <!-- Corner ornaments -->
+  <path d="M 18,18 Q 26,18 26,26" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 882,18 Q 874,18 874,26" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 18,342 Q 26,342 26,334" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+  <path d="M 882,342 Q 874,342 874,334" stroke="#1A1714" stroke-width="0.5" fill="none"/>
+
+  <!-- Clouds suggestion (horizontal strokes in sky) -->
+  <path d="M 40,50 Q 60,44 80,50 Q 95,44 115,50" stroke="#1A1714" stroke-width="0.35" fill="none" opacity="0.3"/>
+  <path d="M 42,55 Q 62,49 82,55" stroke="#1A1714" stroke-width="0.25" fill="none" opacity="0.25"/>
+  <path d="M 780,40 Q 800,34 820,40 Q 835,34 855,40" stroke="#1A1714" stroke-width="0.35" fill="none" opacity="0.3"/>
+  <path d="M 782,45 Q 802,39 822,45" stroke="#1A1714" stroke-width="0.25" fill="none" opacity="0.25"/>
+  <path d="M 160,30 Q 190,22 220,30 Q 250,22 280,30" stroke="#1A1714" stroke-width="0.3" fill="none" opacity="0.2"/>
+
+  <!-- Horizon distance marks -->
+  <line x1="12" y1="150" x2="888" y2="150" stroke="#1A1714" stroke-width="0.2" opacity="0.12"/>
+
+  <!-- Title / caption zone at bottom -->
+  <line x1="100" y1="285" x2="800" y2="285" stroke="#1A1714" stroke-width="0.4"/>
+  <rect x="330" y="294" width="240" height="2" fill="#1A1714" opacity="0.2" rx="1"/>
+  <rect x="380" y="300" width="140" height="1.5" fill="#1A1714" opacity="0.15" rx="0.5"/>
+</svg>
