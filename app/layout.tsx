@@ -1,15 +1,19 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  themeColor: "#7A1F1F",
+  colorScheme: "light",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://noetic.app"),
-  title: "Noetic — Think Clearly. Argue Better.",
-  description:
-    "Noetic is an AI-moderated platform for critical thinking and debate. Share a belief, watch it decompose, debate it with peers, and grow your reasoning skills over time.",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+  title: {
+    default: "Noetic — Think clearly. Argue better.",
+    template: "%s | Noetic",
   },
+  description:
+    "Noetic is an AI-moderated space where young thinkers sharpen how they reason, articulate ideas, and engage in respectful debate. Join the waitlist.",
   keywords: [
     "critical thinking",
     "debate platform",
@@ -19,28 +23,49 @@ export const metadata: Metadata = {
     "argumentation",
     "peer debate",
     "intellectual growth",
+    "rhetoric",
+    "logic",
   ],
+  authors: [{ name: "Noetic" }],
+  creator: "Noetic",
+  publisher: "Noetic",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://noetic.app/en",
+  },
   openGraph: {
-    title: "Noetic — Think Clearly. Argue Better.",
+    title: "Noetic — Think clearly. Argue better.",
     description:
-      "An AI-moderated platform for critical thinking and debate, built for students and young thinkers.",
+      "Noetic is an AI-moderated space where young thinkers sharpen how they reason, articulate ideas, and engage in respectful debate. Join the waitlist.",
     type: "website",
-    url: "https://noetic.app",
+    url: "https://noetic.app/en",
+    siteName: "Noetic",
+    locale: "en_US",
     images: [
       {
-        url: "/logos/noetic-logo.png",
-        width: 512,
-        height: 512,
-        alt: "Noetic",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Noetic — Think clearly. Argue better.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Noetic — Think Clearly. Argue Better.",
+    title: "Noetic — Think clearly. Argue better.",
     description:
-      "An AI-moderated platform for critical thinking and debate, built for students and young thinkers.",
-    images: ["/logos/noetic-logo.png"],
+      "Noetic is an AI-moderated space where young thinkers sharpen how they reason, articulate ideas, and engage in respectful debate. Join the waitlist.",
+    images: ["/opengraph-image"],
+    creator: "@noetic",
   },
 };
 
