@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 
 const ease = "easeOut" as const;
 
@@ -28,8 +28,9 @@ function FadeUp({
 }
 
 export default function Hero() {
-  const pathname = usePathname();
-  const currentLocale = pathname?.split("/")[1] || "en";
+  const locale = useLocale();
+  const t = useTranslations("hero");
+  const tNav = useTranslations("nav");
 
   return (
     <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 py-24 sm:px-8 lg:px-12">
@@ -75,7 +76,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <FadeUp delay={0}>
           <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line-strong)] bg-[var(--surface)] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-muted">
-            For the next generation of thinkers
+            {t("badge")}
           </span>
         </FadeUp>
 
@@ -85,9 +86,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease, delay: 0.12 }}
           className="mt-8 text-[3.5rem] font-bold leading-[0.93] tracking-[-0.04em] text-foreground sm:text-[5rem] lg:text-[6.5rem]"
         >
-          Think clearly.
-          <br />
-          Argue better.
+          {t("headline")}
         </motion.h1>
 
         <motion.p
@@ -96,8 +95,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease, delay: 0.22 }}
           className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted sm:text-xl"
         >
-          Noetic is an AI-moderated space where students share beliefs, debate
-          peers, and build the reasoning skills that last a lifetime.
+          {t("subheadline")}
         </motion.p>
 
         <motion.div
@@ -107,16 +105,16 @@ export default function Hero() {
           className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center"
         >
           <a
-            href={`/${currentLocale}#waitlist`}
+            href={`/${locale}#waitlist`}
             className="rounded-full bg-accent px-8 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-hover transition"
           >
-            Join Waitlist
+            {tNav("waitlist")}
           </a>
           <a
-            href={`/${currentLocale}#how-it-works`}
+            href={`/${locale}#how-it-works`}
             className="rounded-full border border-[var(--line-strong)] px-8 py-3.5 text-sm font-semibold text-foreground hover:border-foreground transition"
           >
-            How it works
+            {tNav("howItWorks")}
           </a>
         </motion.div>
       </div>

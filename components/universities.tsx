@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const brands = [
   {
@@ -84,6 +85,8 @@ const brands = [
 ];
 
 export default function CompanyOfThinkers() {
+  const t = useTranslations("universities");
+
   return (
     <section className="border-t border-[var(--line)] px-6 py-14 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-5xl">
@@ -94,7 +97,7 @@ export default function CompanyOfThinkers() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <p className="mb-10 text-center text-[10px] font-semibold uppercase tracking-[0.22em] text-muted">
-            In the company of thinkers.
+            {t("label")}
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-14 lg:gap-x-16">

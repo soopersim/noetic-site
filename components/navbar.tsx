@@ -3,17 +3,14 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { label: "Mission", href: "#mission" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "FAQ", href: "#faq" },
-];
+import LanguageSwitcher from "./language-switcher";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const currentLocale = pathname?.split("/")[1] || "en";
+  const locale = useLocale();
+  const t = useTranslations("nav");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -23,7 +20,13 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const localeHref = (hash: string) => `/${currentLocale}${hash}`;
+  const navLinks = [
+    { label: t("mission"), href: "#mission" },
+    { label: t("howItWorks"), href: "#how-it-works" },
+    { label: t("faq"), href: "#faq" },
+  ];
+
+  const localeHref = (hash: string) => `/${locale}${hash}`;
 
   return (
     <header
@@ -62,13 +65,16 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA + mobile toggle */}
-        <div className="flex items-center gap-3">
+        {/* Language switcher + CTA + mobile toggle */}
+        <div className="flex items-center gap-4">
+          <div className="hidden sm:block">
+            <LanguageSwitcher />
+          </div>
           <a
             href={localeHref("#waitlist")}
             className="hidden rounded-full border border-accent bg-accent px-5 py-2 text-sm font-semibold text-white hover:bg-accent-hover transition sm:inline-flex"
           >
-            Join Waitlist
+            {t("waitlist")}
           </a>
           <button
             onClick={() => setMenuOpen((v) => !v)}
@@ -100,8 +106,11 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
               className="mt-2 rounded-full bg-accent px-6 py-3 text-center text-sm font-semibold text-white hover:bg-accent-hover transition"
             >
-              Join Waitlist
+              {t("waitlist")}
             </a>
+            <div className="mt-2 border-t border-[var(--line)] pt-4">
+              <LanguageSwitcher />
+            </div>
           </nav>
         </div>
       )}

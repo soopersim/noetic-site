@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { z } from "zod";
+import { useTranslations } from "next-intl";
 
 const emailSchema = z.string().email();
 
 export default function FinalCTA() {
+  const t = useTranslations("waitlist");
   const [email, setEmail] = useState("");
   const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -18,7 +20,7 @@ export default function FinalCTA() {
 
     const parsed = emailSchema.safeParse(email);
     if (!parsed.success) {
-      setErrorMsg("Please enter a valid email address.");
+      setErrorMsg(t("errors.invalid"));
       setStatus("error");
       return;
     }
@@ -46,7 +48,7 @@ export default function FinalCTA() {
           setStatus("success");
           return;
         }
-        setErrorMsg("Something went wrong. Please try again.");
+        setErrorMsg(t("errors.generic"));
         setStatus("error");
         return;
       }
@@ -54,7 +56,7 @@ export default function FinalCTA() {
       setStatus("success");
       setEmail("");
     } catch {
-      setErrorMsg("Something went wrong. Please try again.");
+      setErrorMsg(t("errors.generic"));
       setStatus("error");
     }
   };
@@ -72,11 +74,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <h2 className="text-4xl font-bold tracking-[-0.03em] text-foreground sm:text-5xl lg:text-[3.5rem]">
-            Think clearly.
-            <br />
-            Argue better.
-            <br />
-            Join Noetic.
+            {t("label")}
           </h2>
 
           {status === "success" ? (
@@ -86,10 +84,7 @@ export default function FinalCTA() {
               className="mt-10"
             >
               <p className="text-base font-semibold text-foreground">
-                You&apos;re on the list.
-              </p>
-              <p className="mt-1 text-sm text-muted">
-                We&apos;ll be in touch when Noetic is ready for you.
+                {t("success")}
               </p>
             </motion.div>
           ) : (
@@ -108,7 +103,7 @@ export default function FinalCTA() {
 
               <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                 <label htmlFor="cta-email" className="sr-only">
-                  Email address
+                  {t("email")}
                 </label>
                 <input
                   id="cta-email"
@@ -118,7 +113,7 @@ export default function FinalCTA() {
                     setEmail(e.target.value);
                     if (status === "error") setStatus("idle");
                   }}
-                  placeholder="your@email.com"
+                  placeholder={t("email")}
                   required
                   className="w-full rounded-full border border-[var(--line-strong)] bg-transparent px-5 py-3 text-sm text-foreground placeholder:text-muted outline-none focus:border-foreground sm:w-72"
                 />
@@ -127,7 +122,7 @@ export default function FinalCTA() {
                   disabled={status === "submitting"}
                   className="w-full rounded-full bg-accent px-7 py-3 text-sm font-semibold text-white hover:bg-accent-hover disabled:opacity-60 transition sm:w-auto"
                 >
-                  {status === "submitting" ? "Joining…" : "Join Waitlist"}
+                  {status === "submitting" ? t("submitting") : t("button")}
                 </button>
               </div>
 
@@ -138,7 +133,7 @@ export default function FinalCTA() {
           )}
 
           <p className="mt-6 text-[10px] font-semibold uppercase tracking-widest text-muted opacity-60">
-            No spam. Just early access and updates.
+            {t("body")}
           </p>
         </motion.div>
       </div>

@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { X, Globe, Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
   const year = new Date().getFullYear();
 
   return (
@@ -13,29 +15,29 @@ export default function Footer() {
           <div>
             <p className="text-sm font-bold tracking-[-0.02em] text-foreground">noetic</p>
             <p className="mt-2 max-w-[200px] text-xs leading-relaxed text-muted">
-              Building the next generation of rigorous, respectful thinkers.
+              {t("tagline")}
             </p>
           </div>
 
           {/* Column 2: Product + Company */}
           <div className="grid grid-cols-2 gap-6 sm:col-span-1 sm:grid-cols-2">
             <div>
-              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">Product</p>
+              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">{t("product")}</p>
               <ul className="space-y-2 text-xs text-muted">
                 <li><span className="opacity-50">App — coming soon</span></li>
               </ul>
             </div>
             <div>
-              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">Company</p>
+              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">{t("legal")}</p>
               <ul className="space-y-2 text-xs">
                 <li>
                   <Link href="/en/terms" className="text-muted hover:text-foreground transition-colors">
-                    Terms
+                    {t("terms")}
                   </Link>
                 </li>
                 <li>
                   <Link href="/en/privacy" className="text-muted hover:text-foreground transition-colors">
-                    Privacy
+                    {t("privacy")}
                   </Link>
                 </li>
               </ul>
@@ -47,7 +49,7 @@ export default function Footer() {
             <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">Connect</p>
             <div className="flex items-center gap-4">
               <a
-                href="mailto:asknoetic@gmail.com"
+                href={`mailto:${t("contact")}`}
                 aria-label="Email"
                 className="text-muted hover:text-foreground transition-colors"
               >
@@ -87,12 +89,12 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="mt-4 flex flex-col gap-2 border-t border-[var(--line)] pt-6 sm:flex-row sm:justify-between">
-          <p className="text-xs text-muted">© {year} Noetic. All rights reserved.</p>
+          <p className="text-xs text-muted">{t("copyright", { year })}</p>
           <a
-            href="mailto:asknoetic@gmail.com"
+            href={`mailto:${t("contact")}`}
             className="text-xs text-muted hover:text-foreground transition-colors"
           >
-            asknoetic@gmail.com
+            {t("contact")}
           </a>
         </div>
       </div>

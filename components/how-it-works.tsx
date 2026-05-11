@@ -2,31 +2,18 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-const steps = [
-  {
-    n: "01",
-    title: "Share a thought.",
-    body: "Type out an opinion, belief, or argument — anything you want to examine more closely.",
-  },
-  {
-    n: "02",
-    title: "Watch it decompose.",
-    body: "Noetic's AI breaks your argument into claims, assumptions, and evidence, exposing what's solid and what isn't.",
-  },
-  {
-    n: "03",
-    title: "Debate it live.",
-    body: "Get matched with a peer for an AI-moderated discussion that challenges both of you to think harder.",
-  },
-  {
-    n: "04",
-    title: "Grow over time.",
-    body: "Track your reasoning, articulation, and listening skills as you practise — and watch them improve.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function HowItWorks() {
+  const t = useTranslations("howItWorks");
+
+  const steps = [
+    { n: "01", title: t("steps.one.title"), body: t("steps.one.body") },
+    { n: "02", title: t("steps.two.title"), body: t("steps.two.body") },
+    { n: "03", title: t("steps.three.title"), body: t("steps.three.body") },
+    { n: "04", title: t("steps.four.title"), body: t("steps.four.body") },
+  ];
+
   return (
     <section id="how-it-works" className="border-t border-[var(--line)] px-6 py-20 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-6xl">
@@ -61,12 +48,10 @@ export default function HowItWorks() {
               className="mb-12"
             >
               <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
-                How Noetic works
+                {t("label")}
               </p>
               <h2 className="mt-3 text-4xl font-bold tracking-[-0.03em] text-foreground sm:text-5xl">
-                From thought
-                <br />
-                to understanding.
+                {t("title")}
               </h2>
             </motion.div>
 

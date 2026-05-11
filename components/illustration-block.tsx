@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function IllustrationBlock() {
+  const t = useTranslations("illustration");
+
   return (
     <section id="mission" className="px-6 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-6xl">
@@ -27,7 +30,7 @@ export default function IllustrationBlock() {
 
           {/* Caption */}
           <p className="mx-auto mt-6 max-w-lg text-center font-serif text-lg italic leading-relaxed text-muted">
-            "A place to be in dialogue, not in performance."
+            &ldquo;{t("caption")}&rdquo;
           </p>
         </motion.div>
       </div>
